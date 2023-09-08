@@ -4,12 +4,13 @@
 }
 
 body {
+    /* min-height: 100vh; */
+    min-height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-    /* align-content: center; */
+    /* justify-content: stretch; */
     /* flex: 1; */
+    /* justify-content: stretch ; */
 }
 
 .header,
@@ -27,6 +28,7 @@ body {
     /* flex: 1 1 300px; */
     /* flex: 1; */
     flex-basis: 400px;
+    flex: 1 0 auto;
 }
 
 .header-left,
@@ -145,6 +147,7 @@ li {
 .body {
     display: flex;
     flex-direction: column;
+    flex: 1 0 auto;
 }
 
 .body .main {
@@ -232,7 +235,10 @@ li {
     text-align: center;
     font-size: 18px;
     padding: 40px;
+    margin-top: auto;
+    flex-shrink: 0;
 }
+
 
 
 
